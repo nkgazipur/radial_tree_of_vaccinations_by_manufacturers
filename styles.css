@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+#dropdown-box {
+  text-align: center;
+  margin: 30px;
+}
+
+
+#tooltip {
+  position: absolute;
+  z-index: 10;
+  visibility: hidden;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgb(16, 15, 15);
+  opacity: 0.8;
+  color: white;
+  transition: all 0.2s ease-out;
+  pointer-events: none;
+}
+
+#tooltip:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background: rgb(16, 15, 15);
+  transform: translate(-50%, 50%) rotate(45deg);
+  transform-origin: center center;
+  z-index: 10;
+}
